@@ -9,13 +9,15 @@
 <property name="connection.username">root</property>
 <property name="connection.password">admin</property>
 <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
-
-
-<property name="hbm2ddl.auto">update</property>
+<property name="hbm2ddl.auto">create</property>
 <property name="show_sql">true</property>
+<property name="format_sql">true</property>
 <mapping class="com.tut.HIbernateFirst.Student"/>
 <mapping class="com.tut.HIbernateFirst.Address"></mapping>
-
+<mapping class="com.map.Question"/>
+<mapping class="com.map.Answer"></mapping>
+<mapping class="com.map2.Emp"/>
+<mapping class="com.map2.Project"></mapping>
 </session-factory>
 
 </hibernate-configuration>
